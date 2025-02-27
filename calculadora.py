@@ -38,12 +38,13 @@ def sub():
         num2 = float(input(f"\nNumero {i}-> "))
         num -= num2
         res = num
-        print(f"\nresultado: {res - 1}")
+        if(num2 != -1):
+            print(f"\nresultado: {res}")
         
+    print(f"\nresultado: {res - 1}")
         
 
     return
-
 
 def mul():
     
@@ -59,10 +60,12 @@ def mul():
         num2 = float(input(f"\nNumero {i}-> "))
         num *= num2
         res = num
-        print(f"\nresultado: {res * - 1}")
-        
-        
+        if(num2 != -1):
+            print(f"\nresultado: {res}")
 
+    print(f"\nresultado: {res * - 1}")
+        
+    
     return
 
 def div():
@@ -79,8 +82,13 @@ def div():
         num2 = float(input(f"\nNumero {i}-> "))
         num /= num2
         res = num
-        print(f"\nresultado: {res * -1:.2f}")
+        if(num2 != -1):
+            print(f"\nresultado: {res:.2f}")
         
+
+    print(f"\nresultado: {res * -1:.2f}")
+        
+
         
 
     return
@@ -184,6 +192,8 @@ def ler():
     else:
         print("\nOPERAÇÃO NÃO ENCONTRADA DIGITE NOVAMENTE")
         ler()
+    
+    return
 
 def main():
     
