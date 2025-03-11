@@ -1,14 +1,25 @@
 import math
 
-px = int(input("\nme diga as coordenadas de origem (x e y):\nx = "))
-py = int(input("y = "))
+def calcular_trajetoria(V0, theta, t):
 
-dx = int(input("\nagora as coordenas do destino (x e y):\nx = "))
-dy = int(input("y = "))
+    theta_rad = math.radians(theta)
+    
+    g = 9.81 
+    
+    x = V0 * math.cos(theta_rad) * t
 
-total = (dx - px)**2 + (dy - py)**2
+    y = V0 * math.sin(theta_rad) * t - 0.5 * g * t**2    
+    return x, y
 
-resultado = math.sqrt(total)
+def main():
 
-print(f"\na distancia linear é de = {resultado:.2f}")
+V0 = 50  
+theta = 45 
+t = 2 
 
+x, y = calcular_trajetoria(V0, theta, t)
+
+print(f"Posição horizontal: {x:.2f} metros")
+print(f"Altura: {y:.2f} metros")
+
+main()

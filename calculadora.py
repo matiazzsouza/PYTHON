@@ -132,6 +132,9 @@ def pot():
     return
         
 def ler():
+
+    print("\n\n\t\tOLA SEJA BEM-VINDO A CALCULADRA DO MATIAZ\n\t\t\t\tAPERTE ENTER PARA COMEÇAR")
+    input()
     
     test: int
     print("\n1-)SOMA\n2-)SUBTRÇÃO\n3-)MULTIPLICAÇÃO\n4-)DIVISÃO\n5-)PORCENTAGEM\n6-)POTÊNCIAÇÃO\n7-)SAIR")
@@ -144,7 +147,7 @@ def ler():
         if(test != 1):
             return
         else:
-            main()
+            ler()
             
     elif(num == 2):
         sub()
@@ -152,7 +155,7 @@ def ler():
         if(test != 1):
             return
         else:
-            main()
+            ler()
             
     elif(num == 3):
         mul()
@@ -160,7 +163,7 @@ def ler():
         if(test != 1):
             return
         else:
-            main()
+            ler()
             
     elif(num == 4):
         div()
@@ -168,7 +171,7 @@ def ler():
         if(test != 1):
             return
         else:
-            main()
+            ler()
             
     elif(num ==5):
         porc()
@@ -176,7 +179,7 @@ def ler():
         if(test != 1):
             return
         else:
-            main()
+            ler()
             
     elif(num == 6):
         pot()
@@ -184,7 +187,7 @@ def ler():
         if(test != 1):
             return
         else:
-            main()
+            ler()
             
     elif(num == 7):
         return
@@ -197,8 +200,7 @@ def ler():
 
 def main():
     
-    print("\n\n\t\tOLA SEJA BEM-VINDO A CALCULADRA DO MATIAZ\n\t\t\t\tAPERTE ENTER PARA COMEÇAR")
-    input()
+  
     
     ler()
     
