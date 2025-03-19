@@ -133,9 +133,12 @@ def pot():
         
 def ler():
 
-    print("\n\n\t\tOLA SEJA BEM-VINDO A CALCULADRA DO MATIAZ\n\t\t\t\tAPERTE ENTER PARA COMEÇAR")
+
+    print("\n\n")
+    print("-"*80)
+    print("\t\tOLA SEJA BEM-VINDO A CALCULADRA DO MATIAZ\n\t\t\tAPERTE ENTER PARA COMEÇAR")
+    print("-"*80)
     input()
-    
     test: int
     print("\n1-)SOMA\n2-)SUBTRÇÃO\n3-)MULTIPLICAÇÃO\n4-)DIVISÃO\n5-)PORCENTAGEM\n6-)POTÊNCIAÇÃO\n7-)SAIR")
     num = int(input("AGORA DIGITE A OPERAÇÃO QUE VOCE DESEJA:"))
@@ -205,6 +208,9 @@ def main():
     ler()
     
     print("\n\n\t\tOBRIGADO POR ACESSAR A CALCULADORA\n\t\t\t\t\tVOLTE SEMPRE")
+
+    if __name__ == "__main__":
+
     
 main()
 
