@@ -1,0 +1,18 @@
+import os
+import random
+import math
+
+def limpar_tela():
+    # Para Windows
+    if os.name == 'nt':
+        os.system('cls')
+
+    numale = random.randint(0 , 100)
+
+    print(f"{'Valor inicial:':<30} R$ {conta_inicial:>7.2f}")  #COMANDO PARA DEIXAR OS VALORES TUDO NA MESMA COLUNA
+
+
+    resultado = math.sqrt(total)  #EXEMPLO DE COMO USAR IMPORT MATH
+
+        print(f"\t\tOLÁ SEJA BEM-VINDO {name.upper()}") #DEIXA A LETRA MAIUSCULA 
+
