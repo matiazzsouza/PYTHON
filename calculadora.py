@@ -209,7 +209,6 @@ def main():
     
     print("\n\n\t\tOBRIGADO POR ACESSAR A CALCULADORA\n\t\t\t\t\tVOLTE SEMPRE")
 
-    if __name__ == "__main__":
 
     
 main()

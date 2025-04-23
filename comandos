@@ -1,11 +1,16 @@
 import os
 import random
 import math
+import mysql.connector
+from mysql.connector import Error
 
 def limpar_tela():
     # Para Windows
     if os.name == 'nt':
         os.system('cls')
+
+	    total = list(map(int, total)) # transforma uma lista de numeros(str) em numeros(int)
+
 
     numale = random.randint(0 , 100)
 
@@ -15,4 +20,64 @@ def limpar_tela():
     resultado = math.sqrt(total)  #EXEMPLO DE COMO USAR IMPORT MATH
 
         print(f"\t\tOLÁ SEJA BEM-VINDO {name.upper()}") #DEIXA A LETRA MAIUSCULA 
+
+
+    #tipos de try e except 
+
+        # Try / Except genérico
+    try:
+        # código
+    except:
+        # tratamento genérico
+
+    # Try / Except com tipo específico
+    try:
+        # código
+    except ValueError:
+        # tratamento para ValueError
+
+    # Try / Except com múltiplos tipos de erro
+    try:
+        # código
+    except ZeroDivisionError:
+        # tratamento para ZeroDivisionError
+    except ValueError:
+        # tratamento para ValueError
+
+    # Try / Except com múltiplos erros no mesmo bloco
+    try:
+        # código
+    except (ValueError, TypeError):
+        # tratamento comum para múltiplos erros
+
+    # Try / Except / Else
+    try:
+        # código
+    except Exception:
+        # tratamento
+    else:
+        # executado se não houve erro
+
+    # Try / Except / Finally
+    try:
+        # código
+    except Exception:
+        # tratamento
+    finally:
+        # sempre executado
+
+    # Try / Except com variável de erro
+    try:
+        # código
+    except ValueError as e:
+        print("Erro:", e)
+
+    # Try com exceção personalizada
+    class ErroPersonalizado(Exception):
+        pass
+
+    try:
+        raise ErroPersonalizado("Mensagem de erro")
+    except ErroPersonalizado as e:
+        print("Erro personalizado:", e)
 
