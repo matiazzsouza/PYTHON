@@ -12,20 +12,13 @@ def consulta(nomes):
     
     print("Nome nao cadatrado")
 
-    opcao = int(input("\nDeseja consultar mais algum nome:"))
+    opcao = int(input("\nDeseja consultar mais algum nome:\n1)Sim\n2)Não"))
     
-    print("1)Sim\n2)Não")
 
     if(opcao == 1):
         consulta(nomes)
 
     return
-
-
-    
-
-
-
 
 def main():
 
@@ -38,16 +31,12 @@ def main():
         nome = input(f"{i + 1}° nome:")
         nomes.append(nome)
 
-    opcao = int(input("deseja consultar algum nome:"))
+    opcao = int(input("\nDeseja consultar mais algum nome:\n1)Sim\n2)Não"))
 
-    print("1)Sim\n2)Não")
-    
+
     if(opcao == 1):
         consulta(nomes)
 
-
-
-    
     
     print("obrigado por ler esse lindo codigo")
 
