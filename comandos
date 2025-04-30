@@ -1,8 +1,24 @@
 import os
 import random
+import json
 import math
 import mysql.connector
 from mysql.connector import Error
+
+
+def salvar(dados):
+    with open('dados.json', 'w') as f:
+        json.dump(dados, f)
+        
+# FORMA DE DEIXAR SALVO MESMO FECHANDO O CODIGO 
+
+def carregar():
+    try:
+        with open('dados.json', 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
 
 def limpar_tela():
     # Para Windows
