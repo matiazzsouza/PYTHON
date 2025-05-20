@@ -230,9 +230,6 @@ def ler():
 
     limpa()
     
-    print("\tBEM-VINDO A CeCaR\n  aperte enter para continuar...")
-    input()
-
     while(True):
         while(True):
             limpa() 
@@ -277,6 +274,9 @@ def ler():
             limpa()
 
 def main():
+    
+    print("\tBEM-VINDO A CeCaR\n  aperte enter para continuar...")
+    input()
 
     ler()
 
