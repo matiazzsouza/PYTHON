@@ -29,6 +29,10 @@ def limpar_tela():
 
 
     numale = random.randint(0 , 100)
+	cores = ("vermelho", "verde", "azul", "amarelo")
+	cor_aleatoria = random.choice(cores)
+
+	print(cor_aleatoria) 
 
     print(f"{'Valor inicial:':<30} R$ {conta_inicial:>7.2f}")  #COMANDO PARA DEIXAR OS VALORES TUDO NA MESMA COLUNA
 
